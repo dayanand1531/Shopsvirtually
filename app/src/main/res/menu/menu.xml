@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:title="@string/home"
+            />
+        <item
+            android:id="@+id/menu_bedsheets"
+            android:title="@string/bedsheet"
+            />
+        <item
+            android:id="@+id/menu_hotel_lenin"
+            android:title="@string/hotel_lenin"
+            /> <item
+        android:id="@+id/menu_new_arrival"
+        android:title="@string/new_arrival"
+        /> <item
+        android:id="@+id/menu_comfort"
+        android:title="@string/comfort"
+        /> <item
+        android:id="@+id/menu_cusion"
+        android:title="@string/cushion"
+        /> <item
+        android:id="@+id/menu_towels"
+        android:title="@string/towels"
+        /> <item
+        android:id="@+id/menu_skincare"
+        android:title="@string/skin"
+        /> <item
+        android:id="@+id/menu_decorater"
+        android:title="@string/decorater"
+        /> <item
+        android:id="@+id/menu_contact"
+        android:title="@string/contact"
+        />
+    </group>
+
+</menu>

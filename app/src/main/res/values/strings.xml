@@ -1,0 +1,245 @@
+<resources>
+    <string name="app_name">ShopsVirtully</string>
+    <string name="continu">Continue</string>
+    <string name="account">Account</string>
+    <string name="enter_email">Enter the e-mail address associated with your account. Click submit to have a password reset link e-mailed to you.</string>
+    <string name="your_email">Your E-Mail Address</string>
+    <string name="enteremail">Enter Email</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_back">Back</string>
+
+    menu item
+    <string name="home">Home</string>
+    <string name="bedsheet">Bedsheets</string>
+    <string name="hotel_lenin">Hotal Lenin</string>
+    <string name="new_arrival">New Arrivals</string>
+    <string name="comfort">Comforters</string>
+    <string name="cushion">Cushion Covers</string>
+    <string name="towels">Towels</string>
+    <string name="skin">Skin Care</string>
+    <string name="luxary">Luxury Skin Care</string>
+    sub menu of luxury skin care
+
+    <string name="decorater">Decorations</string>
+    <string name="mosquiteo">Mosquitos Nets</string>
+    submenu of decorater
+    <string name="curtain">Curtains</string>
+
+    <string name="contact">Contact</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="shoping_categary">Shop By Categories</string>
+    <string name="latest_collection">Latest Collections</string>
+    <string name="latest">Latest</string>
+    <string name="add_to_card">Add to Cart</string>
+
+    //Bottom bar layout
+    <string name="address"> Bandala Ngozi Street, Dar Es salaam Tanzania</string>
+    <string name="contact_account"> +255688301818</string>
+    <string name="email">  info@shopsvirtually.com</string>
+    <string name="contact_service">Customer Service</string>
+    <string name="contactus">Contact Us</string>
+    <string name="returns">Returns</string>
+    <string name="sitemap">Site Map</string>
+    <string name="myaccount">My Account</string>
+    <string name="orderhistery">Order History</string>
+    <string name="newsletter">Newsletter</string>
+    <string name="information">Information</string>
+    <string name="aboutus">About Us</string>
+    <string name="cancalletion">Cancellation Policy</string>
+    <string name="refund">Refund Policy</string>
+    <string name="tc">Terms &#38; Conditions</string>
+    <string name="brand">Brands</string>
+    <string name="special">Specials</string>
+    <string name="copyright">Copyright © Shopsvirtually| Designed &#38; Developed By Softlife Technologies</string>
+
+    //information Dialog box
+    <string name="whatweoff">What We Offer?</string>
+    <string name="offerdesc">We have a colossal throng of Cotton (single, double bed, and king size), cushion covers, table linen, curtains AC quilts, dohars, comforters, and many more, especially from the heart of Jaipur. All of the units are offered in different materials like cotton, polyester, etc. You can select the best piece in terms of price, color, and personal satisfaction and put an order. bed sheets printed cushion covers and many others.</string>
+    <string name="varioupaymentopt">Various Payment Options</string>
+    <string name="paymentoptdescpition">When it comes to payment options, we have numerous payment options that will help you to select the one with which you are suitable and ensure a safe and secure checkout. The security for each and every customer is highly maintained as you are our loving customers. A payment option majorly includes MasterCard, VISA, Bank Transfer. For customer who loves to pay at the time of delivery, we have availed the option of COD (Cash on Delivery). And Mobile money.</string>
+    <string name="chose">Why Choose Shopvirtually?</string>
+    <string name="chose_description">There is not just one single reason to opt Shopvirtually eCommerce portal for your home furnishing needs, rather there are many. Firstly, each and every is specially crafted by our experienced and highly professional artists. Apart from this, the artifacts are showcased with a price tag which is the best value for your money. The price is kept so low in order to bestow you the best experience of the finest quality fabrics available in the world market, clubbed together with "always-on-our-toes-service". We have the best quality artifacts, all at a very reasonable and effective price. </string>
+    <string name="justgive">Just Give us a chance to Serve You</string>
+    <string name="cancellation">Cancellation Policy</string>
+    <string name="how_to_cancel">How To Cancel your order</string>
+    <string name="descpolicy">If you wish to cancel your order, you can do it provided the order is not dispatched, in either of the following ways- </string>
+    <string name="one">1. email with your order no. on Info@</string>
+    <string name="two">2. Call with your cancellation request &#38;  order no. on +255688301818</string>
+    <string name="three">3. WhatsApp your cancellation request with order no. on +255688301818</string>
+    <string name="bold1"><b>•</b> To avoid problems related to recurring transactions, <b>Shopsvirtually</b> wants our customers to know how to contact Customer Support (who may be able to save the account) and ensure that our cancellation policy is easy to find and contains instructions on how to cancel. Please refer to our Refund Policy for details.</string>
+    <string name="bolt2"><b>•</b> All returns requested for other than quality defect ( like not being as per your taste/likes will levy a return shipping charge of TSH 10,000 /+ Vat). In the case of quilts &#38;  comforters, the Return Shipping Charges will be TSH 10,00 (inclusive VAT ) for every single bed quilt &#38;  TSH10,000 /- (inclusive VAT) for every double bed quilt. If you agree with this term please mail us at (info@shopsvirtually.com), we will get back to you shortly.</string>
+    <string name="we">We’re sorry to see you go and would appreciate hearing about any problems with our service that are prompting your cancellation. <b>Contact Customer Support at</b> 068830181 or email info@shopsvirtually.com. To cancel your subscription, please go to Your Account and click on the Cancel link. On the following page, you will be asked to confirm the cancellation. IMPORTANT: You must continue processing your cancellation until you receive the final cancellation confirmation page. If you stop this process prior to receiving that page, your cancellation will not be processed.</string>
+    <string name="howto_return">How To Return An Item?</string>
+    <string name="if_you_wish">If you wish to return an item, please inform within 7 days in either of the following ways-</string>
+
+    <string name="anemail">1. An email with your order no. on info@shopsvirtually.com Or Click Here</string>
+
+    <string name="callwith">2. Call with your return request &#38;  order no. on +255688301818</string>
+    <string name="whatsapp">3. WhatsApp your return request with order no. on +255688301818 Or Click Here</string>
+    <string name="yourutem">Your item must be in its original unused condition to be returned. Merchandise that has been worn, used or altered will not be accepted for return or exchange.</string>
+    <string name="pleasenote">Please note damage does not include any issue with the product pertaining to the style/design of the product. Bleeding and rubbing of vegetable dyes (especially the Indigo dye) is not a defect. Similarly, minor stitching issues in Quilts may occur even after rigorous quality checks. This may happen during the quilts undergoing packing process &#38;  will not be considered as a defect.</string>
+
+    <string name="pleasenotminor"><b>Please note that minor variations in color (up to 10%) may be seen due to different monitors and will not be treated as not as per description.</b></string>
+    <string name="returnchange"><b>Return Charges</b></string>
+
+
+    <string name="allreturn">1. All returns requested for other than any quality defect like not being as per your taste/likes will levy a return shipping charge of TSH10,000- (inclusive VAT) per product ( weight up to 1.5 KG).</string>
+
+    <string name="inthecase">2. In the case of quilts &#38;  comforters the Return Shipping Charges will be TSH 10,000- (inclusive VAT) for every single bed quilt &#38;  10,000/- (inclusive vat) for every double bed quilt Merchandise that has been worn, used, or altered will not be accepted for return or exchange.</string>
+
+    <string name="exchange"><b>Exchanges</b></string>
+    <string name="ifyouitem">If your item is in like-new condition, you may exchange it for a different one. You will not be subject to a restocking fee in this case, but you still will have to pay return shipping.</string>
+
+    <string name="sending"><b>Sending the product back</b></string>
+
+    <string name="oncewe">Once we receive your exchange request, we will organize a Reverse Pickup. When the product is received and approved by our quality team, we will issue a refund equal to the amount of your purchase only. Please note the shipping fee is non-refundable. This process can take anything between 7 to 14 days. In case, our courier partner does not provide Reverse Pickup from your location, you will need to ship it back to us. Kindly send the product back to us within 7 days of receiving it.</string>
+
+    <string name="noreturn"><b>NO RETURN ON SALE ITEMS -</b></string>
+
+    <string name="productpurchased">Products purchased by you during our sale will not be liable for any return/refund.</string>
+
+    <string name="noreturnon"><b>NO RETURN ON INTERNATIONAL ORDERS</b></string>
+    <string name="productpurchasefrom">Products purchased from outside Tanzania will not be liable for any return/refund.</string>
+    <string name="mail"><b>Mail your returned item to:</b></string>
+    <string name="shopsvirtuuly">ShopsVirtually Dar es Salaam Tanzania</string>
+
+    //filter text
+    <string name="sort">Sort By:</string>
+    <string name="show">Show:</string>
+    //contact us dialog box
+    <string name="location">Our Location</string>
+    <string name="sitename"><b>Shopsvirtually</b></string>
+    <string name="telephone"> Telephone</string>
+    <string name="opening">Opening Times</string>
+    <string name="time">24 x 7</string>
+    <string name="youname">Your Name</string>
+    <string name="enquary">Enquiry</string>
+    <string name="emailaddress">E-Mail Address</string>
+    <string name="btnsubmit">Submit</string>
+    <string name="retunformstatement">Please complete the form below to request an RMA number.</string>
+    <string name="orderhistory">Order History</string>
+    <string name="firestname">*First Name</string>
+    <string name="lastname">*Last Name</string>
+    <string name="orderid">*Order ID</string>
+    <string name="orderdate">*Order Date</string>
+    <string name="productinformation">Product Information</string>
+    <string name="productname">*Product Name</string>
+    <string name="productcode">*Product Code</string>
+    <string name="quantity">Quantity</string>
+    <string name="resion">*Reason for Return</string>
+    <string name="productopening">Product is opened</string>
+    <string name="faculity">Faulty or other details</string>
+
+    //reson of product return
+    <string name="deadonarival">Dead On Arrival</string>
+    <string name="faculty">Faulty, please supply details</string>
+    <string name="ordererror">Order Error</string>
+    <string name="supplaydetail">Other, please supply details</string>
+    <string name="recivedwrongitem">Received Wrong Item</string>
+    <string name="yes">Yes</string>
+    <string name="No">No</string>
+    <string name="subcribe">Subscribe</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">* Password Confirm</string>
+    <string name="youpassword">Your Password</string>
+
+    //login
+    <string name="newuser">New Customer</string>
+    <string name="register"><b>Register</b></string>
+    <string name="bycreateing">By creating an account you will be able to shop faster, be up to date on an orders status, and keep track of the orders you have previously made.</string>
+
+    //My Affiliate Account
+    <string name="myaffilatedaccount">My Affiliate Account</string>
+    <string name="company">Company</string>
+    <string name="website">Web Site</string>
+    <string name="paymentinformation">Payment Information</string>
+    <string name="texid">Tax ID</string>
+    <string name="paymentmethord">Payment Method</string>
+    <string name="cheque">Cheque</string>
+    <string name="paypal">PayPal</string>
+    <string name="banktrantion">Bank Transfer</string>
+    <string name="chequepayeename">Cheque Payee Name</string>
+    <string name="paypalemailaccount">PayPal Email Account</string>
+    <string name="bankname">Bank Name</string>
+    <string name="branchname">ABA/BSB number (Branch Number)</string>
+    <string name="swiftcode">SWIFT Code</string>
+    <string name="accountname">Account Name</string>
+    <string name="accountnumber">Account Number</string>
+    <string name="ihaveread">I have read and agree to the About Us</string>
+
+    //After logout dialog
+    <string name="youhaveloggedoff">You have been logged off your account. It is now safe to leave the computer.</string>
+    <string name="youshoppingcard">Your shopping cart has been saved, the items inside it will be restored whenever you log back into your account.</string>
+
+    // address book entries
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    //add address
+    <string name="addaddress">Add Address</string>
+    <string name="address1">Address 1</string>
+    <string name="address2">Address 2</string>
+    <string name="postcode">Post Code</string>
+    <string name="city">City</string>
+    <string name="countary">Country</string>
+    <string name="state">Region / State</string>
+    <string name="defaultaddress">Default Address</string>
+
+    //Myaccount index
+    <string name="myaccounthead">MY ACCOUNT</string>
+    <string name="editaccounr">Edit Account</string>
+    <string name="addressbook">Address Book</string>
+    <string name="wishinglist">Wish List (%s)</string>
+
+    <string name="myorder">MY ORDERS</string>
+    <string name="download">Downloads</string>
+    <string name="rewardpont">Reward Points</string>
+    <string name="transation">Transactions</string>
+    <string name="paymentprofile">Payment Profile</string>
+
+    <string name="myafficatedaccount">MY AFFILIATE ACCOUNT</string>
+    <string name="registerforaffilaction">Register for an affiliate account</string>
+    <string name="newslette">NEWSLETTER</string>
+
+    <string name="viewcart">View Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="search">Search</string>
+    <string name="accountinformation">Account Information</string>
+
+    //view cart text
+    <string name="usegiftcertifaicte">Use Gift Certificate(0.00kg)</string>
+    <string name="whatyoushould">What would you like to do next?</string>
+    <string name="chooseyouhave">Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</string>
+    <string name="usercoupencode">Use Coupon Code </string>
+    <string name="enteryoucoupon">Enter your coupon here</string>
+    <string name="applycoupon">Apply Coupon</string>
+    <string name="estimateshoping">Estimate Shipping &#38; Taxes</string>
+    <string name="enteryourdegination">Enter your destination to get a shipping estimate.</string>
+    <string name="getquotes">Get Quotes</string>
+    <string name="usegiftcertifation">Use Gift Certificate </string>
+    <string name="enteryourgiftcetication">Enter your gift certificate code here</string>
+    <string name="applygiftcertifiaction">Apply Gift Certificate</string>
+    <string name="subtotal">Sub-Total:</string>
+    <string name="total">Total:	</string>
+
+    //checkout
+    <string name="step1">Step 1: Checkout Options</string>
+    <string name="step2">Step 2: Billing Details </string>
+    <string name="iwantuse">I want to use an existing address</string>
+    <string name="iwantnewuser">I want to use an existing address</string>
+    <string name="step3">Step 3: Delivery Details </string>
+    <string name="step4">Step 4: Delivery Method </string>
+    <string name="pleaseselectpreferredmetororder">Please select the preferred shipping method to use on this order.</string>
+    <string name="flatrat">Flat Rate</string>
+    <string name="flatshippingrate">Flat Shipping Rate - TSh 0</string>
+    <string name="addcommend">Add Comments About Your Order</string>
+    <string name="step5">Step 5: Payment Method </string>
+    <string name="pesapal">Pesapal</string>
+    <string name="cashdelivery">Cash On Delivery</string>
+    <string name="addcommentaboutu">Add Comments About Your Order</string>
+    <string name="step6">Step 6: Confirm Order </string>
+</resources>
