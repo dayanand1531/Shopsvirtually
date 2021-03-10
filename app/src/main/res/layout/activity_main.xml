@@ -6,6 +6,11 @@
     android:id="@+id/drawer"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,7 +22,72 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:hint="Search"
+            android:maxLength="32"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/teal_200"
+            android:text="Search"
+            android:textAllCaps="false" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:padding="@dimen/_5sdp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_baseline_person_24"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_cart"
+            app:layout_constraintEnd_toStartOf="@+id/iv_cart"
+            app:layout_constraintTop_toTopOf="@+id/iv_cart" />
+
+        <ImageView
+            android:id="@+id/iv_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_shopping_cart_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,9 +95,13 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     />
 <include
-    ma
+    android:id="@+id/bottombar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    layout="@layout/bottombar"
     />
 </LinearLayout>
+</androidx.core.widget.NestedScrollView>
 
 <com.google.android.material.navigation.NavigationView
     android:layout_width="wrap_content"

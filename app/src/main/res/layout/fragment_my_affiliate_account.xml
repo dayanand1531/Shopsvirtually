@@ -12,41 +12,44 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView116"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/account"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/account"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView108"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="@string/myaffilatedaccount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView116"
-        app:layout_constraintTop_toBottomOf="@+id/textView116" />
+        <TextView
+            android:id="@+id/textView108"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/myaffilatedaccount"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView116"
+            app:layout_constraintTop_toBottomOf="@+id/textView116" />
 
-    <View
-        android:id="@+id/view12"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_1sdp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView108"
-        app:layout_constraintTop_toBottomOf="@+id/textView108" />
+        <View
+            android:id="@+id/view12"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/filterbackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView108"
+            app:layout_constraintTop_toBottomOf="@+id/textView108" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName13"
+            android:id="@+id/et_company_affilateaccount"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -63,7 +66,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView109" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName18"
+        android:id="@+id/et_website"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -78,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView111" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName19"
+        android:id="@+id/et_texid"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -105,17 +108,18 @@
         app:layout_constraintStart_toStartOf="@+id/view12"
         app:layout_constraintTop_toBottomOf="@+id/view12" />
 
-    <TextView
-        android:id="@+id/tv_company_error"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName13"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName13" />
+        <TextView
+            android:id="@+id/tv_company_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_company_affilateaccount"
+            app:layout_constraintTop_toBottomOf="@+id/et_company_affilateaccount" />
 
     <TextView
         android:id="@+id/textView111"
@@ -129,40 +133,43 @@
         app:layout_constraintStart_toStartOf="@+id/tv_company_error"
         app:layout_constraintTop_toBottomOf="@+id/tv_company_error" />
 
-    <TextView
-        android:id="@+id/tv_website_error"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName18"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName18" />
+        <TextView
+            android:id="@+id/tv_website_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_website"
+            app:layout_constraintTop_toBottomOf="@+id/et_website" />
 
-    <TextView
-        android:id="@+id/textView113"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="@string/paymentinformation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tv_website_error"
-        app:layout_constraintTop_toBottomOf="@+id/tv_website_error" />
+        <TextView
+            android:id="@+id/textView113"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/paymentinformation"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_website_error"
+            app:layout_constraintTop_toBottomOf="@+id/tv_website_error" />
 
-    <TextView
-        android:id="@+id/tv_texid_error"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName19"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName19" />
+        <TextView
+            android:id="@+id/tv_texid_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_texid"
+            app:layout_constraintTop_toBottomOf="@+id/et_texid" />
 
     <TextView
         android:id="@+id/textView115"
@@ -176,43 +183,48 @@
         app:layout_constraintStart_toStartOf="@+id/view13"
         app:layout_constraintTop_toBottomOf="@+id/view13" />
 
-    <View
-        android:id="@+id/view13"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_1sdp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView113" />
+        <View
+            android:id="@+id/view13"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/filterbackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView113" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView117"
-        app:layout_constraintTop_toBottomOf="@+id/textView117">
-
-        <RadioButton
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:id="@+id/rg_payment_methods"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@string/cheque" />
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:checkedButton="@id/rb_cheque"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView117"
+            app:layout_constraintTop_toBottomOf="@+id/textView117">
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/paypal" />
+            <RadioButton
+                android:id="@+id/rb_cheque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheque" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/banktrantion" />
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/rb_paypal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paypal" />
+
+            <RadioButton
+                android:id="@+id/rb_bank_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/banktrantion" />
+        </RadioGroup>
 
     <TextView
         android:id="@+id/textView117"
@@ -226,8 +238,8 @@
         app:layout_constraintStart_toStartOf="@+id/tv_texid_error"
         app:layout_constraintTop_toBottomOf="@+id/tv_texid_error" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName20"
+    <!--<EditText
+        android:id="@+id/et_cheque_payee_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -240,9 +252,100 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView118"
-        app:layout_constraintTop_toBottomOf="@+id/textView118" />
+        app:layout_constraintTop_toBottomOf="@+id/textView118" />-->
+        <LinearLayout
+            android:id="@+id/ll_payeename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/rg_payment_methods">
 
-    <TextView
+            <TextView
+                android:id="@+id/textView118"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/chequepayeename" />
+
+            <EditText
+                android:id="@+id/et_cheque_payee_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/chequepayeename"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_5sdp" />
+
+            <TextView
+                android:id="@+id/tv_cheque_pay_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_payemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/ll_payeename"
+
+            >
+
+            <TextView
+                android:id="@+id/textView112"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/paypalemailaccount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_cheque_pay_error" />
+
+            <EditText
+                android:id="@+id/et_paypal_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/paypalemailaccount"
+                android:inputType="textPersonName"
+                android:maxLength="32"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_error_paypal_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone" />
+        </LinearLayout>
+    <!--<TextView
         android:id="@+id/textView118"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -250,233 +353,271 @@
         android:layout_marginEnd="8dp"
         android:text="@string/chequepayeename"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup2"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:layout_constraintStart_toStartOf="@+id/rg_payment_methods"
+        app:layout_constraintTop_toBottomOf="@+id/rg_payment_methods" />
 
-    <TextView
-        android:id="@+id/textView110"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName20"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName20" />
+        <TextView
+            android:id="@+id/tv_cheque_pay_error"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_cheque_payee_name"
+            app:layout_constraintTop_toBottomOf="@+id/et_cheque_payee_name" />
 
         <TextView
             android:id="@+id/textView112"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:text="@string/paypalemailaccount"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView110" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_cheque_pay_error" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName21"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:ems="10"
-        android:hint="@string/paypalemailaccount"
-        android:singleLine="true"
-        android:maxLength="32"
-        android:background="@drawable/edit_text_background"
-        android:padding="@dimen/_5sdp"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView112"
-        app:layout_constraintTop_toBottomOf="@+id/textView112" />
-
-
-        <TextView
-            android:id="@+id/textView114"
+        <EditText
+            android:id="@+id/et_paypal_email"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:text="@string/bankname"
+            android:background="@drawable/edit_text_background"
+            android:ems="10"
+            android:hint="@string/paypalemailaccount"
+            android:inputType="textPersonName"
+            android:maxLength="32"
+            android:padding="@dimen/_5sdp"
+            android:singleLine="true"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView128" />
+            app:layout_constraintStart_toStartOf="@+id/textView112"
+            app:layout_constraintTop_toBottomOf="@+id/textView112" />-->
 
-        <EditText
-            android:id="@+id/editTextTextPersonName22"
-            android:layout_width="0dp"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_bankdetail"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:hint="@string/bankname"
-            android:inputType="textPersonName"
-            android:padding="@dimen/_5sdp"
-            app:layout_constraintEnd_toEndOf="@+id/textView114"
-            app:layout_constraintStart_toStartOf="@+id/textView114"
-            app:layout_constraintTop_toBottomOf="@+id/textView114" />
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/ll_payemail">
 
-        <TextView
-            android:id="@+id/textView119"
+            <TextView
+                android:id="@+id/textView114"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/bankname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/et_bankname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/bankname"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="@+id/textView114"
+                app:layout_constraintStart_toStartOf="@+id/textView114"
+                app:layout_constraintTop_toBottomOf="@+id/textView114" />
+
+            <TextView
+                android:id="@+id/tv_bankname_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_bankname"
+                app:layout_constraintTop_toBottomOf="@+id/et_bankname" />
+
+            <TextView
+                android:id="@+id/textView120"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/branchname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_bankname_error"
+                app:layout_constraintTop_toBottomOf="@+id/tv_bankname_error" />
+
+            <EditText
+                android:id="@+id/et_branchnumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/branchname"
+                android:inputType="number|textPersonName"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="@+id/textView120"
+                app:layout_constraintStart_toStartOf="@+id/textView120"
+                app:layout_constraintTop_toBottomOf="@+id/textView120" />
+
+            <TextView
+                android:id="@+id/tv_branchnumber_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_branchnumber"
+                app:layout_constraintTop_toBottomOf="@+id/et_branchnumber" />
+
+            <TextView
+                android:id="@+id/textView122"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/swiftcode"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_branchnumber_error"
+                app:layout_constraintTop_toBottomOf="@+id/tv_branchnumber_error" />
+
+            <TextView
+                android:id="@+id/tv_swiftcode_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_swift_code"
+                app:layout_constraintTop_toBottomOf="@+id/et_swift_code" />
+
+            <EditText
+                android:id="@+id/et_swift_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/swiftcode"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView122"
+                app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+            <TextView
+                android:id="@+id/textView124"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/accountname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_swiftcode_error"
+                app:layout_constraintTop_toBottomOf="@+id/tv_swiftcode_error" />
+
+            <EditText
+                android:id="@+id/et_account_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/accountname"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="@+id/textView124"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView124"
+                app:layout_constraintTop_toBottomOf="@+id/textView124" />
+
+            <TextView
+                android:id="@+id/tv_account_name_erorr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_account_name"
+                app:layout_constraintTop_toBottomOf="@+id/et_account_name" />
+
+            <TextView
+                android:id="@+id/textView126"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/accountnumber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_account_name_erorr"
+                app:layout_constraintTop_toBottomOf="@+id/tv_account_name_erorr" />
+
+            <EditText
+                android:id="@+id/et_account_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:hint="@string/accountnumber"
+                android:inputType="number"
+                android:padding="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="@+id/textView126"
+                app:layout_constraintStart_toStartOf="@+id/textView126"
+                app:layout_constraintTop_toBottomOf="@+id/textView126" />
+
+            <TextView
+                android:id="@+id/tv_account_number_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/et_account_number"
+                app:layout_constraintTop_toBottomOf="@+id/et_account_number" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <!-- <TextView
+            android:id="@+id/tv_error_paypal_email"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="TextView"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName22"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName22"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName22" />
-
-        <TextView
-            android:id="@+id/textView120"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/branchname"
-            app:layout_constraintEnd_toEndOf="@+id/textView119"
-            app:layout_constraintStart_toStartOf="@+id/textView119"
-            app:layout_constraintTop_toBottomOf="@+id/textView119" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName23"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:hint="@string/branchname"
-            android:inputType="textPersonName"
-            android:padding="@dimen/_5sdp"
-            app:layout_constraintEnd_toEndOf="@+id/textView120"
-            app:layout_constraintStart_toStartOf="@+id/textView120"
-            app:layout_constraintTop_toBottomOf="@+id/textView120" />
-
-        <TextView
-            android:id="@+id/textView121"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName23"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName23"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName23" />
-
-        <TextView
-            android:id="@+id/textView122"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/swiftcode"
-            app:layout_constraintEnd_toEndOf="@+id/textView121"
-            app:layout_constraintStart_toStartOf="@+id/textView121"
-            app:layout_constraintTop_toBottomOf="@+id/textView121" />
-
-        <TextView
-            android:id="@+id/textView123"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName24"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName24"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName24" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName24"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:hint="@string/swiftcode"
-            android:inputType="textPersonName"
-            android:padding="@dimen/_5sdp"
-            app:layout_constraintEnd_toEndOf="@+id/textView122"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView122"
-            app:layout_constraintTop_toBottomOf="@+id/textView122" />
-
-        <TextView
-            android:id="@+id/textView124"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/accountname"
-            app:layout_constraintEnd_toEndOf="@+id/textView123"
-            app:layout_constraintStart_toStartOf="@+id/textView123"
-            app:layout_constraintTop_toBottomOf="@+id/textView123" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName25"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:hint="@string/accountname"
-            android:inputType="textPersonName"
-            android:padding="@dimen/_5sdp"
-            app:layout_constraintEnd_toEndOf="@+id/textView124"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/textView124"
-            app:layout_constraintTop_toBottomOf="@+id/textView124" />
-
-        <TextView
-            android:id="@+id/textView125"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName25"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName25"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName25" />
-
-        <TextView
-            android:id="@+id/textView126"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/accountnumber"
-            app:layout_constraintEnd_toEndOf="@+id/textView125"
-            app:layout_constraintStart_toStartOf="@+id/textView125"
-            app:layout_constraintTop_toBottomOf="@+id/textView125" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName26"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/edit_text_background"
-            android:ems="10"
-            android:hint="@string/accountnumber"
-            android:inputType="textPersonName"
-            android:padding="@dimen/_5sdp"
-            app:layout_constraintEnd_toEndOf="@+id/textView126"
-            app:layout_constraintStart_toStartOf="@+id/textView126"
-            app:layout_constraintTop_toBottomOf="@+id/textView126" />
-
-        <TextView
-            android:id="@+id/textView127"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName26"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName26"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName26" />
-
-        <TextView
-            android:id="@+id/textView128"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName21"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName21"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName21" />
+            app:layout_constraintEnd_toEndOf="@+id/et_paypal_email"
+            app:layout_constraintStart_toStartOf="@+id/et_paypal_email"
+            app:layout_constraintTop_toBottomOf="@+id/et_paypal_email" />
 
         <TextView
             android:id="@+id/textView129"
@@ -496,7 +637,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.027"
             app:layout_constraintStart_toEndOf="@+id/textView129"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName26" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName26" />-->
 
         <Button
             android:id="@+id/button7"
@@ -512,7 +653,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/checkBox" />
+            app:layout_constraintTop_toBottomOf="@id/cl_bankdetail"
+           />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

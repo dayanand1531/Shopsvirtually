@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sitemap">
+    tools:context=".Fragment.Sitemap">
 
    <androidx.core.widget.NestedScrollView
        android:layout_width="match_parent"
@@ -16,26 +16,26 @@
 
 
     <TextView
-        android:id="@+id/textView177"
+        android:id="@+id/tv_account_information"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/accountinformation"
         android:textColor="@color/teal_200"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView176"
-        app:layout_constraintTop_toBottomOf="@+id/textView176" />
+        app:layout_constraintStart_toStartOf="@+id/tv_myaccount_sitemap"
+        app:layout_constraintTop_toBottomOf="@+id/tv_myaccount_sitemap" />
 
     <TextView
-        android:id="@+id/textView175"
+        android:id="@+id/tv_special_sitemap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/special"
         android:textColor="@color/pink"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView174"
-        app:layout_constraintTop_toBottomOf="@+id/textView174" />
+        app:layout_constraintStart_toStartOf="@+id/tv_curtain"
+        app:layout_constraintTop_toBottomOf="@+id/tv_curtain" />
 
     <TextView
         android:id="@+id/textView188"
@@ -51,7 +51,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView164"
+        android:id="@+id/tv_bedsheet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -61,179 +61,179 @@
         app:layout_constraintTop_toBottomOf="@+id/textView188" />
 
     <TextView
-        android:id="@+id/textView165"
+        android:id="@+id/tv_hotal_lenine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hotel_lenin"
         android:textSize="@dimen/_16sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView164"
-        app:layout_constraintTop_toBottomOf="@+id/textView164" />
+        app:layout_constraintStart_toStartOf="@+id/tv_bedsheet"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bedsheet" />
 
     <TextView
-        android:id="@+id/textView166"
+        android:id="@+id/tv_new_arrival"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/new_arrival"
         android:textSize="@dimen/_16sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView165"
-        app:layout_constraintTop_toBottomOf="@+id/textView165" />
+        app:layout_constraintStart_toStartOf="@+id/tv_hotal_lenine"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotal_lenine" />
 
     <TextView
-        android:id="@+id/textView167"
+        android:id="@+id/tv_comforter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/comfort"
         android:textSize="@dimen/_16sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView166"
-        app:layout_constraintTop_toBottomOf="@+id/textView166" />
+        app:layout_constraintStart_toStartOf="@+id/tv_new_arrival"
+        app:layout_constraintTop_toBottomOf="@+id/tv_new_arrival" />
 
     <TextView
-        android:id="@+id/textView168"
+        android:id="@+id/tv_cushion_cover"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cushion"
         android:textSize="@dimen/_16sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView167"
-        app:layout_constraintTop_toBottomOf="@+id/textView167" />
+        app:layout_constraintStart_toStartOf="@+id/tv_comforter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_comforter" />
 
     <TextView
-        android:id="@+id/textView169"
+        android:id="@+id/tv_towels"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/towels"
         android:textSize="@dimen/_16sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView168"
-        app:layout_constraintTop_toBottomOf="@+id/textView168" />
+        app:layout_constraintStart_toStartOf="@+id/tv_cushion_cover"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cushion_cover" />
 
     <TextView
-        android:id="@+id/textView170"
+        android:id="@+id/tv_skin_care"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/skin"
         android:textSize="@dimen/_16sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView169"
-        app:layout_constraintTop_toBottomOf="@+id/textView169" />
+        app:layout_constraintStart_toStartOf="@+id/tv_towels"
+        app:layout_constraintTop_toBottomOf="@+id/tv_towels" />
 
     <TextView
-        android:id="@+id/textView171"
+        android:id="@+id/tv_luxury_skin_care"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/luxary"
         android:textColor="@color/pink"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView170"
-        app:layout_constraintTop_toBottomOf="@+id/textView170" />
+        app:layout_constraintStart_toStartOf="@+id/tv_skin_care"
+        app:layout_constraintTop_toBottomOf="@+id/tv_skin_care" />
 
     <TextView
-        android:id="@+id/textView172"
+        android:id="@+id/tv_decoration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/decorater"
         android:textSize="@dimen/_16sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView170"
-        app:layout_constraintTop_toBottomOf="@+id/textView171" />
+        app:layout_constraintStart_toStartOf="@+id/tv_skin_care"
+        app:layout_constraintTop_toBottomOf="@+id/tv_luxury_skin_care" />
 
     <TextView
-        android:id="@+id/textView173"
+        android:id="@+id/tv_mosquitos_nets"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="@string/mosquiteo"
         android:textColor="@color/pink"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView172"
-        app:layout_constraintTop_toBottomOf="@+id/textView172" />
+        app:layout_constraintStart_toStartOf="@+id/tv_decoration"
+        app:layout_constraintTop_toBottomOf="@+id/tv_decoration" />
 
     <TextView
-        android:id="@+id/textView174"
+        android:id="@+id/tv_curtain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/curtain"
         android:textColor="@color/pink"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView173"
-        app:layout_constraintTop_toBottomOf="@+id/textView173" />
+        app:layout_constraintStart_toStartOf="@+id/tv_mosquitos_nets"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mosquitos_nets" />
 
     <TextView
-        android:id="@+id/textView176"
+        android:id="@+id/tv_myaccount_sitemap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/myaccount"
         android:textColor="@color/pink"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView175"
-        app:layout_constraintTop_toBottomOf="@+id/textView175" />
+        app:layout_constraintStart_toStartOf="@+id/tv_special_sitemap"
+        app:layout_constraintTop_toBottomOf="@+id/tv_special_sitemap" />
 
     <TextView
-        android:id="@+id/textView178"
+        android:id="@+id/tv_password_change"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/password"
         android:textColor="@color/teal_200"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView177"
-        app:layout_constraintTop_toBottomOf="@+id/textView177" />
+        app:layout_constraintStart_toStartOf="@+id/tv_account_information"
+        app:layout_constraintTop_toBottomOf="@+id/tv_account_information" />
 
     <TextView
-        android:id="@+id/textView179"
+        android:id="@+id/tv_address_book"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/addressbook"
         android:textColor="@color/teal_200"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView178"
-        app:layout_constraintTop_toBottomOf="@+id/textView178" />
+        app:layout_constraintStart_toStartOf="@+id/tv_password_change"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password_change" />
 
     <TextView
-        android:id="@+id/textView180"
+        android:id="@+id/tv_order_history_sitemap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/orderhistery"
         android:textColor="@color/teal_200"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView179"
-        app:layout_constraintTop_toBottomOf="@+id/textView179" />
+        app:layout_constraintStart_toStartOf="@+id/tv_address_book"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address_book" />
 
     <TextView
-        android:id="@+id/textView181"
+        android:id="@+id/tv_download"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/download"
         android:textColor="@color/teal_200"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView180"
-        app:layout_constraintTop_toBottomOf="@+id/textView180" />
+        app:layout_constraintStart_toStartOf="@+id/tv_order_history_sitemap"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_history_sitemap" />
 
     <TextView
-        android:id="@+id/textView182"
+        android:id="@+id/tv_view_cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/viewcart"
         android:textColor="@color/pink"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView176"
-        app:layout_constraintTop_toBottomOf="@+id/textView181" />
+        app:layout_constraintStart_toStartOf="@+id/tv_myaccount_sitemap"
+        app:layout_constraintTop_toBottomOf="@+id/tv_download" />
 
     <TextView
-        android:id="@+id/textView183"
+        android:id="@+id/tv_checkout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/checkout"
         android:textColor="@color/pink"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView182"
-        app:layout_constraintTop_toBottomOf="@+id/textView182" />
+        app:layout_constraintStart_toStartOf="@+id/tv_view_cart"
+        app:layout_constraintTop_toBottomOf="@+id/tv_view_cart" />
 
     <TextView
-        android:id="@+id/textView184"
+        android:id="@+id/tv_search"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/search"
         android:textColor="@color/pink"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView183"
-        app:layout_constraintTop_toBottomOf="@+id/textView183" />
+        app:layout_constraintStart_toStartOf="@+id/tv_checkout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_checkout" />
 
     <TextView
         android:id="@+id/textView185"
@@ -242,11 +242,11 @@
         android:text="@string/information"
         android:textColor="@color/pink"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView184"
-        app:layout_constraintTop_toBottomOf="@+id/textView184" />
+        app:layout_constraintStart_toStartOf="@+id/tv_search"
+        app:layout_constraintTop_toBottomOf="@+id/tv_search" />
 
     <TextView
-        android:id="@+id/textView186"
+        android:id="@+id/tv_about_us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -257,44 +257,46 @@
         app:layout_constraintTop_toBottomOf="@+id/textView185" />
 
     <TextView
-        android:id="@+id/textView187"
+        android:id="@+id/tv_cancellation_policy_sitemap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/cancalletion"
         android:textColor="@color/teal_200"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView186"
-        app:layout_constraintTop_toBottomOf="@+id/textView186" />
+        app:layout_constraintStart_toStartOf="@+id/tv_about_us"
+        app:layout_constraintTop_toBottomOf="@+id/tv_about_us" />
 
     <TextView
-        android:id="@+id/textView189"
+        android:id="@+id/tv_refund_policy_site_map"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/refund"
         android:textColor="@color/teal_200"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView187"
-        app:layout_constraintTop_toBottomOf="@+id/textView187" />
+        app:layout_constraintStart_toStartOf="@+id/tv_cancellation_policy_sitemap"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cancellation_policy_sitemap" />
 
            <TextView
-               android:id="@+id/textView190"
+               android:id="@+id/tv_term_and_condition"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="@string/tc"
                android:textColor="@color/teal_200"
                android:textSize="@dimen/_14sdp"
-               app:layout_constraintStart_toStartOf="@+id/textView189"
-               app:layout_constraintTop_toBottomOf="@+id/textView189" />
+               app:layout_constraintStart_toStartOf="@+id/tv_refund_policy_site_map"
+               app:layout_constraintTop_toBottomOf="@+id/tv_refund_policy_site_map" />
 
-    <TextView
-        android:id="@+id/textView191"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/contact"
-        android:textColor="@color/teal_200"
-        android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@+id/textView190"
-        app:layout_constraintTop_toBottomOf="@+id/textView190" />
+        <TextView
+            android:id="@+id/tv_contact_site_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/contact"
+            android:textColor="@color/teal_200"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_term_and_condition"
+            app:layout_constraintTop_toBottomOf="@+id/tv_term_and_condition" />
        </androidx.constraintlayout.widget.ConstraintLayout>
    </androidx.core.widget.NestedScrollView>
 

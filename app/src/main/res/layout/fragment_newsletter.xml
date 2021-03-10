@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/edit_text_background"
+    android:layout_margin="@dimen/_16sdp"
     tools:context=".Fragment.Newsletter">
 
     <!-- TODO: Update blank fragment layout -->
@@ -38,11 +39,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/teal_200"
         android:text="@string/btn_continue"
         android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/radioGroup3"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/radioGroup3"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
 

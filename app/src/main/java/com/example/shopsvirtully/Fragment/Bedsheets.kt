@@ -31,16 +31,16 @@ private var _binding:FragmentBedsheetsBinding?=null
         // Inflate the layout for this fragment
         _binding= FragmentBedsheetsBinding.inflate(inflater,container,false)
         val view=binding.root
-        var placeholder=FilterLayoutBinding.bind(binding.root)  //Binding view Filter layout
-        var bottombarBinding=BottombarBinding.bind(binding.root) //bottam binding root
+//        var placeholder=FilterLayoutBinding.bind(binding.root)  //Binding view Filter layout
+      //  var bottombarBinding=BottombarBinding.bind(binding.root) //bottam binding root
 
         context?.let { bedsheetsCollection(it,binding.rvBedsheets) } // Method call for Bedsheets Recyclerview
-        context?.let { FilterClass().sort(it,placeholder.spSorted) }  // Filter short list
-        context?.let { FilterClass().show(it,placeholder.spShow) }   // Filter show no of page and item in view
-        bottombarBinding.tvOrderHistory.setOnClickListener(View.OnClickListener {
+//        context?.let { FilterClass().sort(it,placeholder.spSorted) }  // Filter short list
+      //  context?.let { FilterClass().show(it,placeholder.spShow) }   // Filter show no of page and item in view
+      /*  bottombarBinding.tvOrderHistory.setOnClickListener(View.OnClickListener {
             var fragment=Account()
             fragmentManager?.beginTransaction()?.replace(R.id.flcontext,fragment)?.commit()!!
-        })
+        })*/
 
         return view
     }

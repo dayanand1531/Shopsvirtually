@@ -54,7 +54,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/et_first_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -72,7 +72,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView95" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/et_last_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -90,7 +90,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView96" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/et_email_signup"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -108,7 +108,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView97" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/et_telephone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -126,7 +126,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView98" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/et_password_signup"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -144,7 +144,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView99" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
+            android:id="@+id/et_confirm_password"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -162,13 +162,13 @@
             app:layout_constraintTop_toBottomOf="@+id/textView100" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_continue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="16dp"
-            android:foreground="@color/teal_200"
+            android:backgroundTint="@color/teal_200"
             android:text="@string/continu"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -179,57 +179,81 @@
 
         <TextView
             android:id="@+id/tv_error_first_name"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/pink"
             android:visibility="gone"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_first_name"
+            app:layout_constraintTop_toBottomOf="@+id/et_first_name" />
 
         <TextView
             android:id="@+id/tv_error_last_name"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/pink"
             android:visibility="gone"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_last_name"
+            app:layout_constraintTop_toBottomOf="@+id/et_last_name" />
 
         <TextView
             android:id="@+id/tv_error_email_signup"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/pink"
             android:visibility="gone"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_email_signup"
+            app:layout_constraintTop_toBottomOf="@+id/et_email_signup" />
 
         <TextView
             android:id="@+id/tv_error_telephone"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/pink"
             android:visibility="gone"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_telephone"
+            app:layout_constraintTop_toBottomOf="@+id/et_telephone" />
 
         <TextView
             android:id="@+id/tv_error_password_signup"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/pink"
             android:visibility="gone"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_password_signup"
+            app:layout_constraintTop_toBottomOf="@+id/et_password_signup" />
 
         <TextView
             android:id="@+id/tv_error_confirm_password"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:visibility="visible"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/pink"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_confirm_password"
+            app:layout_constraintTop_toBottomOf="@+id/et_confirm_password" />
 
         <TextView
             android:id="@+id/textView14"
@@ -252,10 +276,13 @@
 
         <TextView
             android:id="@+id/tv_error_checkbox"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
             android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textView14"
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -276,7 +303,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/lastname"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toStartOf="@+id/et_first_name"
             app:layout_constraintTop_toBottomOf="@+id/tv_error_first_name" />
 
         <TextView
@@ -285,7 +312,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/emailaddress"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
+            app:layout_constraintStart_toStartOf="@+id/et_last_name"
             app:layout_constraintTop_toBottomOf="@+id/tv_error_last_name" />
 
         <TextView
@@ -312,7 +339,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/confirmpassword"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName5"
+            app:layout_constraintStart_toStartOf="@+id/et_password_signup"
             app:layout_constraintTop_toBottomOf="@+id/tv_error_password_signup" />
 
         <TextView
@@ -394,8 +421,8 @@
             android:layout_marginTop="8dp"
             android:text="@string/youpassword"
             android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+            app:layout_constraintStart_toStartOf="@+id/tv_error_telephone"
+            app:layout_constraintTop_toBottomOf="@+id/tv_error_telephone" />
     </androidx.constraintlayout.widget.ConstraintLayout>
    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

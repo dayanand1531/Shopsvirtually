@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Description">
+
+
+    <View
+        android:id="@+id/view25"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/filterbackground"
+        app:layout_constraintBottom_toBottomOf="@+id/view23"
+        app:layout_constraintStart_toStartOf="@+id/textView243"
+        app:layout_constraintTop_toTopOf="@+id/view23" />
+
+    <View
+        android:id="@+id/view24"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/filterbackground"
+        app:layout_constraintBottom_toBottomOf="@+id/view21"
+        app:layout_constraintStart_toStartOf="@+id/textView241"
+        app:layout_constraintTop_toTopOf="@+id/view21"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view23"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="8dp"
+        android:background="@color/filterbackground"
+        app:layout_constraintStart_toStartOf="@+id/textView234"
+        app:layout_constraintTop_toBottomOf="@+id/textView234" />
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/filterbackground"
+        app:layout_constraintBottom_toBottomOf="@+id/view18"
+        app:layout_constraintStart_toStartOf="@+id/textView239"
+        app:layout_constraintTop_toTopOf="@+id/view18" />
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="8dp"
+        android:background="@color/filterbackground"
+        app:layout_constraintStart_toStartOf="@+id/textView232"
+        app:layout_constraintTop_toBottomOf="@+id/textView232" />
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="8dp"
+        android:background="@color/filterbackground"
+        app:layout_constraintStart_toStartOf="@+id/textView230"
+        app:layout_constraintTop_toBottomOf="@+id/textView230" />
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/filterbackground"
+        app:layout_constraintBottom_toBottomOf="@+id/view18"
+        app:layout_constraintStart_toStartOf="@+id/textView239"
+        app:layout_constraintTop_toTopOf="@+id/view18"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView222"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="PRODUCT DETAILS "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView213"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Set content: 2 bedsheet with 4pillow covers"
+        app:layout_constraintEnd_toEndOf="@+id/textView222"
+        app:layout_constraintStart_toStartOf="@+id/textView222"
+        app:layout_constraintTop_toBottomOf="@+id/textView222" />
+
+    <TextView
+        android:id="@+id/textView214"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Size: King Size"
+        app:layout_constraintEnd_toEndOf="@+id/textView213"
+        app:layout_constraintStart_toStartOf="@+id/textView213"
+        app:layout_constraintTop_toBottomOf="@+id/textView213" />
+
+    <TextView
+        android:id="@+id/textView215"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Quality: Fine, 100% cotton "
+        app:layout_constraintEnd_toEndOf="@+id/textView214"
+        app:layout_constraintStart_toStartOf="@+id/textView214"
+        app:layout_constraintTop_toBottomOf="@+id/textView214" />
+
+    <TextView
+        android:id="@+id/textView216"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Print/ pattern: Striped and cartoon print"
+        app:layout_constraintEnd_toEndOf="@+id/textView215"
+        app:layout_constraintStart_toStartOf="@+id/textView215"
+        app:layout_constraintTop_toBottomOf="@+id/textView215" />
+
+    <TextView
+        android:id="@+id/textView217"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Feature: Flat, made from high strength cotton"
+        app:layout_constraintEnd_toEndOf="@+id/textView216"
+        app:layout_constraintStart_toStartOf="@+id/textView216"
+        app:layout_constraintTop_toBottomOf="@+id/textView216" />
+
+    <TextView
+        android:id="@+id/textView218"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Size and Fit"
+        app:layout_constraintEnd_toEndOf="@+id/textView217"
+        app:layout_constraintStart_toStartOf="@+id/textView217"
+        app:layout_constraintTop_toBottomOf="@+id/textView217" />
+
+    <TextView
+        android:id="@+id/textView219"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bedsheet Size (cm): 240X 265cm"
+        app:layout_constraintEnd_toEndOf="@+id/textView218"
+        app:layout_constraintStart_toStartOf="@+id/textView218"
+        app:layout_constraintTop_toBottomOf="@+id/textView218" />
+
+    <TextView
+        android:id="@+id/textView220"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pillow Size (cm): 48X75cm"
+        app:layout_constraintEnd_toEndOf="@+id/textView219"
+        app:layout_constraintStart_toStartOf="@+id/textView219"
+        app:layout_constraintTop_toBottomOf="@+id/textView219" />
+
+    <TextView
+        android:id="@+id/textView223"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Material and Care"
+        app:layout_constraintEnd_toEndOf="@+id/textView220"
+        app:layout_constraintStart_toStartOf="@+id/textView220"
+        app:layout_constraintTop_toBottomOf="@+id/textView220" />
+
+    <TextView
+        android:id="@+id/textView224"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="100% cotton"
+        app:layout_constraintEnd_toEndOf="@+id/textView223"
+        app:layout_constraintStart_toStartOf="@+id/textView223"
+        app:layout_constraintTop_toBottomOf="@+id/textView223" />
+
+    <TextView
+        android:id="@+id/textView225"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Machine-wash cold"
+        app:layout_constraintEnd_toEndOf="@+id/textView224"
+        app:layout_constraintStart_toStartOf="@+id/textView224"
+        app:layout_constraintTop_toBottomOf="@+id/textView224" />
+
+    <TextView
+        android:id="@+id/textView226"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Specifications"
+        app:layout_constraintEnd_toEndOf="@+id/textView225"
+        app:layout_constraintStart_toStartOf="@+id/textView225"
+        app:layout_constraintTop_toBottomOf="@+id/textView225" />
+
+    <TextView
+        android:id="@+id/textView227"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bed Size"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView236"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView226" />
+
+    <TextView
+        android:id="@+id/textView228"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="King size "
+        app:layout_constraintEnd_toEndOf="@+id/textView227"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView227"
+        app:layout_constraintTop_toBottomOf="@+id/textView227" />
+
+    <TextView
+        android:id="@+id/textView229"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Quality"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/view16"
+        app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+    <TextView
+        android:id="@+id/textView230"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Luxury "
+        app:layout_constraintEnd_toEndOf="@+id/textView229"
+        app:layout_constraintStart_toStartOf="@+id/textView229"
+        app:layout_constraintTop_toBottomOf="@+id/textView229" />
+
+    <TextView
+        android:id="@+id/textView231"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Print or Pattern Type"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/view18"
+        app:layout_constraintTop_toBottomOf="@+id/view18" />
+
+    <TextView
+        android:id="@+id/textView232"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Print"
+        app:layout_constraintStart_toStartOf="@+id/textView231"
+        app:layout_constraintTop_toBottomOf="@+id/textView231" />
+
+    <TextView
+        android:id="@+id/textView233"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Number of Pillow Covers"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/view21"
+        app:layout_constraintTop_toBottomOf="@+id/view21" />
+
+    <TextView
+        android:id="@+id/textView234"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="@+id/textView233"
+        app:layout_constraintTop_toBottomOf="@+id/textView233" />
+
+    <TextView
+        android:id="@+id/textView235"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tags: Bedsheet"
+        app:layout_constraintStart_toStartOf="@+id/view23"
+        app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="8dp"
+        android:background="@color/filterbackground"
+        app:layout_constraintEnd_toEndOf="@+id/textView228"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView228"
+        app:layout_constraintTop_toBottomOf="@+id/textView228" />
+
+    <View
+        android:id="@+id/view17"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="8dp"
+        android:background="@color/filterbackground"
+        app:layout_constraintEnd_toEndOf="@+id/textView237"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView237"
+        app:layout_constraintTop_toBottomOf="@+id/textView237" />
+
+    <TextView
+        android:id="@+id/textView236"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fabric"
+        app:layout_constraintBottom_toBottomOf="@+id/textView227"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView227"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView237"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cotton"
+        app:layout_constraintBottom_toBottomOf="@+id/textView228"
+        app:layout_constraintEnd_toEndOf="@+id/textView236"
+        app:layout_constraintStart_toStartOf="@+id/textView236"
+        app:layout_constraintTop_toTopOf="@+id/textView228" />
+
+    <TextView
+        android:id="@+id/textView238"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thread Count"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView229"
+        app:layout_constraintStart_toStartOf="@+id/view17"
+        app:layout_constraintTop_toTopOf="@+id/textView229" />
+
+    <TextView
+        android:id="@+id/textView239"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/textView230"
+        app:layout_constraintStart_toStartOf="@+id/textView238"
+        app:layout_constraintTop_toTopOf="@+id/textView230" />
+
+    <TextView
+        android:id="@+id/textView240"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView231"
+        app:layout_constraintStart_toStartOf="@+id/view20"
+        app:layout_constraintTop_toTopOf="@+id/textView231" />
+
+    <TextView
+        android:id="@+id/textView241"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flat"
+        app:layout_constraintBottom_toBottomOf="@+id/textView232"
+        app:layout_constraintStart_toStartOf="@+id/textView240"
+        app:layout_constraintTop_toTopOf="@+id/textView232" />
+
+    <TextView
+        android:id="@+id/textView242"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Bedsheets"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView233"
+        app:layout_constraintStart_toStartOf="@+id/view24"
+        app:layout_constraintTop_toTopOf="@+id/textView233" />
+
+    <TextView
+        android:id="@+id/textView243"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView234"
+        app:layout_constraintStart_toStartOf="@+id/textView242"
+        app:layout_constraintTop_toTopOf="@+id/textView234" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

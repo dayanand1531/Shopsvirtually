@@ -35,23 +35,22 @@ class ViewCartTableAdapter(context: Context,var productlist:ArrayList<ViewCartTa
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):ViewHolder {
         var view=LayoutInflater.from(parent.context)
-        if (viewType==header){
+      /*  if (viewType==header){
              view=LayoutInflater.from(parent.context)
             var binding1=ViewCatHeaderBinding.inflate(view)
 
         }
-     else {
-    var view=LayoutInflater.from(parent.context)
+     else {*/
+   // var view=LayoutInflater.from(parent.context)
         var binding=ViewCartItemDataBinding.inflate(view)
 
-     }
-        return ViewHolder(view)
+        return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         var productlist:ViewCartTableModel=productlist[position]
 
-        if (holder instanceof ViewHolder){
+     /*   if (holder instanceof ViewHolder){
             holder?.binding.tvImage.setText("Image")
             holder?.binding.tvProductName.setText("Product Name")
             holder?.binding.tvModel.setText("Modal")
@@ -59,14 +58,14 @@ class ViewCartTableAdapter(context: Context,var productlist:ArrayList<ViewCartTa
             holder?.binding.tvUnitprice.setText("Unit Price")
             holder?.binding.tvTotal.setText("Total")
         }
-        else{
+        else{*/
             holder?.binding.ivImage.setImageResource(productlist.image)
             holder?.binding.tvProductName.setText(productlist.product_name)
             holder?.binding.tvModel.setText(productlist.model)
             holder?.binding.tvQuentity.setText(productlist.qunity)
             holder?.binding.tvUnitprice.setText(productlist.unit_price)
             holder?.binding.tvTotal.setText(productlist.total)
-        }
+
 
     }
 
@@ -75,5 +74,4 @@ class ViewCartTableAdapter(context: Context,var productlist:ArrayList<ViewCartTa
 
     }
 
-    override fun get
 }

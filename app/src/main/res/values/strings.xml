@@ -26,7 +26,7 @@
     <string name="curtain">Curtains</string>
 
     <string name="contact">Contact</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="open">Open</string>
@@ -149,7 +149,7 @@
 
     //login
     <string name="newuser">New Customer</string>
-    <string name="register"><b>Register</b></string>
+    <string name="register">Register</string>
     <string name="bycreateing">By creating an account you will be able to shop faster, be up to date on an orders status, and keep track of the orders you have previously made.</string>
 
     //My Affiliate Account
@@ -242,4 +242,27 @@
     <string name="cashdelivery">Cash On Delivery</string>
     <string name="addcommentaboutu">Add Comments About Your Order</string>
     <string name="step6">Step 6: Confirm Order </string>
+
+    //product descripition
+    <string name="description">Description</string>
+    <string name="review">Review</string>
+
+    // write Review
+    <string name="therearenoreview">There are no reviews for this product.</string>
+    <string name="writeareview">Write a review</string>
+    <string name="yourname">* Your Name</string>
+    <string name="yourreview">* Your Review</string>
+    <string name="nothtml">Note: HTML is not translated!</string>
+    <string name="rating">* Rating  </string>
+    <string name="bad">Bad</string>
+    <string name="good">Good</string>
+    <string name="tag">Tags: bedsheet</string>
+
+    //home
+    <string name="bedsheetcollection">Bedsheets Collections</string>
+    <string name="decorecollecion">Décor Collections</string>
+
+    //Login menu
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
 </resources>

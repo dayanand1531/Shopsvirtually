@@ -1,13 +1,14 @@
-package com.example.shopsvirtully
+package com.example.shopsvirtully.Fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.shopsvirtully.R
 
 
-class Sitemap : Fragment() {
+class Product_Description : Fragment() {
 
 
     override fun onCreateView(
@@ -15,7 +16,7 @@ class Sitemap : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_sitemap, container, false)
+        return inflater.inflate(R.layout.fragment_product__description, container, false)
     }
 
 

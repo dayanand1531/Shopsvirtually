@@ -9,11 +9,12 @@ import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.shopsvirtully.Cart.MyCartData
 import com.example.shopsvirtully.DataModal.BedSheetCollection_Data
-import com.example.shopsvirtully.DataModal.LatestCollectionData
 import com.example.shopsvirtully.R
 
 class BedSheetsCollection_Adapter(context: Context,var bedsheetcollection:ArrayList<BedSheetCollection_Data>): RecyclerView.Adapter<BedSheetsCollection_Adapter.ViewHolder>() {
+
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var img=itemView.findViewById<ImageView>(R.id.iv_collection_img)
         var title=itemView.findViewById<TextView>(R.id.tv_collectiontypes)
@@ -37,6 +38,9 @@ class BedSheetsCollection_Adapter(context: Context,var bedsheetcollection:ArrayL
         holder?.discription.setText( bedsheetcollectionData.discription)
         holder?.price.setText( bedsheetcollectionData.price)
         holder?.ratingBar.rating= bedsheetcollectionData.ratingBar
+        holder?.addtoCart.setOnClickListener(View.OnClickListener {
+           var  cart=MyCartData(bedsheetcollectionData.image,bedsheetcollectionData.title,1.toString(),bedsheetcollectionData.price)
+        })
 
     }
 

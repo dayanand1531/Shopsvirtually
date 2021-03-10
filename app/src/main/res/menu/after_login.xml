@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/menu_hi"
+    android:title="Hi"
+    />
+    <item
+        android:id="@+id/menu_myaccount"
+        android:title="@string/myaccount"
+        />
+    <item
+        android:id="@+id/menu_order_history"
+        android:title="Order History"
+        />
+    <item
+        android:id="@+id/menu_transation"
+        android:title="@string/transation"
+        />
+    <item
+        android:id="@+id/menu_download"
+        android:title="@string/download"
+        />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="@string/logout"
+        />
+</menu>

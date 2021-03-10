@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Review_Write">
+
+    <TextView
+        android:id="@+id/textView250"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/therearenoreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView221"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/writeareview"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView250"
+        app:layout_constraintTop_toBottomOf="@+id/textView250" />
+
+    <TextView
+        android:id="@+id/textView244"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/yourname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView221"
+        app:layout_constraintTop_toBottomOf="@+id/textView221" />
+
+    <EditText
+        android:id="@+id/et_name_review"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="@string/youname"
+        android:singleLine="true"
+        android:maxLength="32"
+        android:inputType="textPersonName"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView244"
+        app:layout_constraintTop_toBottomOf="@+id/textView244" />
+
+    <TextView
+        android:id="@+id/tv_name_error_review"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="@color/pink"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_name_review"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_review" />
+
+    <TextView
+        android:id="@+id/textView246"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/yourreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_name_error_review"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_error_review" />
+
+    <EditText
+        android:id="@+id/et_reivwe_review"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/yourreview"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:lines="8"
+        android:maxLines="8"
+        android:minLines="6"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView246"
+        app:layout_constraintTop_toBottomOf="@+id/textView246" />
+
+    <TextView
+        android:id="@+id/tv_review_error"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="@color/pink"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_reivwe_review"
+        app:layout_constraintTop_toBottomOf="@+id/et_reivwe_review" />
+
+    <TextView
+        android:id="@+id/textView248"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/nothtml"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_review_error"
+        app:layout_constraintTop_toBottomOf="@+id/tv_review_error" />
+
+    <TextView
+        android:id="@+id/textView249"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/rating"
+        app:layout_constraintStart_toStartOf="@+id/textView248"
+        app:layout_constraintTop_toBottomOf="@+id/textView248" />
+
+    <RadioGroup
+        android:id="@+id/rg_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:checkedButton="@id/rb_5_review"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView251"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView251"
+        app:layout_constraintTop_toTopOf="@+id/textView251">
+
+        <RadioButton
+            android:id="@+id/rb_1_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <RadioButton
+            android:id="@+id/rb_2_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_3_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_4_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_5_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/good" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView251"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:text="@string/bad"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/textView249"
+        app:layout_constraintStart_toEndOf="@+id/textView249"
+        app:layout_constraintTop_toTopOf="@+id/textView249" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/btn_continue"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView249" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

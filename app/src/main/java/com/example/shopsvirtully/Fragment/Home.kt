@@ -42,7 +42,7 @@ class Home : Fragment() {
 
         _binding= FragmentHomeBinding.inflate(inflater,container,false)  //View binding
         var view=binding.root //view binding
-        var bottombarBinding=BottombarBinding.bind(binding.root)
+      //  var bottombarBinding=BottombarBinding.bind(binding.root)
         list.add(HomeAutoSlider(R.drawable.badsheet_red))
         list.add(HomeAutoSlider(R.drawable.white))
         list.add(HomeAutoSlider(R.drawable.ic_launcher_background))
@@ -58,16 +58,16 @@ class Home : Fragment() {
         collection_recyclerview=view.findViewById(R.id.rv_latest_collection)
         skincare_recyclerview=view.findViewById(R.id.rv_skincare)
         decorater_recyclerview=view.findViewById(R.id.rv_decorater)
-        aboutus=view.findViewById(R.id.tv_aboutus)
-        var retunploicy=view.findViewById<TextView>(R.id.tv_refund_policy)
+       /* aboutus=view.findViewById(R.id.tv_aboutus)
+        var retunploicy=view.findViewById<TextView>(R.id.tv_refund_policy)*/
 
-        bottombarBinding.tvCancellationPolicy.setOnClickListener(object :View.OnClickListener{
+        /*bottombarBinding.tvCancellationPolicy.setOnClickListener(object :View.OnClickListener{
             override fun onClick(v: View?) {
                 cancellationPolicy()
             }
-        })
+        })*/
 
-        aboutus.setOnClickListener(object :View.OnClickListener{
+        /*aboutus.setOnClickListener(object :View.OnClickListener{
             override fun onClick(v: View?) {
             aboutUs()
             }
@@ -78,7 +78,7 @@ class Home : Fragment() {
                 fragmentManager?.beginTransaction()?.replace(R.id.flcontext,ViewCartGift())?.commit()
             }
 
-        })
+        })*/
 
 
 
@@ -105,7 +105,7 @@ class Home : Fragment() {
         var offerAdapater=OfferAdapater(context,offerlist)
        /* recyclerView.hasFixedSize(true)*/
         var layoutManager=LinearLayoutManager(activity)
-         layoutManager.orientation=LinearLayoutManager.HORIZONTAL
+
         recyclerView.layoutManager=layoutManager
         recyclerView.adapter=offerAdapater
     }

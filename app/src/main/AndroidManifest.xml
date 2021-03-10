@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.shopsvirtully">
-
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ShopsVirtully">
         <activity android:name=".Forgot_Password"></activity>
-        <activity android:name=".Sign_Up" />
         <activity android:name=".Login" />
+        <activity android:name=".Sign_Up" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

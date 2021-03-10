@@ -85,7 +85,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName7"
+                android:id="@+id/et_first_name_return"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -93,7 +93,9 @@
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:maxLength="32"
                 android:padding="@dimen/_5sdp"
+                android:singleLine="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView50"
                 app:layout_constraintTop_toBottomOf="@+id/textView50" />
@@ -104,11 +106,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName7"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+                android:textColor="@color/pink"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/et_first_name_return"
+                app:layout_constraintTop_toBottomOf="@+id/et_first_name_return" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName8"
+                android:id="@+id/et_last_name_return"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -116,22 +120,26 @@
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:maxLength="32"
                 android:padding="@dimen/_5sdp"
+                android:singleLine="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView51"
                 app:layout_constraintTop_toBottomOf="@+id/textView51" />
 
             <TextView
-                android:id="@+id/textView53"
+                android:id="@+id/tv_lastname_error_return"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName8"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+                app:layout_constraintStart_toStartOf="@+id/et_last_name_return"
+                app:layout_constraintTop_toBottomOf="@+id/et_last_name_return" />
 
             <TextView
                 android:id="@+id/textView54"
@@ -141,11 +149,11 @@
                 android:text="@string/emailaddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView53"
-                app:layout_constraintTop_toBottomOf="@+id/textView53" />
+                app:layout_constraintStart_toStartOf="@+id/tv_lastname_error_return"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lastname_error_return" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName9"
+                android:id="@+id/et_email_return"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -153,22 +161,26 @@
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:maxLength="32"
                 android:padding="@dimen/_5sdp"
+                android:singleLine="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView54"
                 app:layout_constraintTop_toBottomOf="@+id/textView54" />
 
             <TextView
-                android:id="@+id/textView55"
+                android:id="@+id/tv_error_email_return"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName9"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+                app:layout_constraintStart_toStartOf="@+id/et_email_return"
+                app:layout_constraintTop_toBottomOf="@+id/et_email_return" />
 
             <TextView
                 android:id="@+id/textView56"
@@ -178,34 +190,38 @@
                 android:text="@string/telephone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView55"
-                app:layout_constraintTop_toBottomOf="@+id/textView55" />
+                app:layout_constraintStart_toStartOf="@+id/tv_error_email_return"
+                app:layout_constraintTop_toBottomOf="@+id/tv_error_email_return" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName10"
+                android:id="@+id/et_telephone_return"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
+                android:maxLength="32"
                 android:padding="@dimen/_5sdp"
+                android:singleLine="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView56"
                 app:layout_constraintTop_toBottomOf="@+id/textView56" />
 
             <TextView
-                android:id="@+id/textView57"
+                android:id="@+id/tv_telephone_error_return"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName10"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+                app:layout_constraintStart_toStartOf="@+id/et_telephone_return"
+                app:layout_constraintTop_toBottomOf="@+id/et_telephone_return" />
 
             <TextView
                 android:id="@+id/textView58"
@@ -215,11 +231,11 @@
                 android:text="@string/orderid"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView57"
-                app:layout_constraintTop_toBottomOf="@+id/textView57" />
+                app:layout_constraintStart_toStartOf="@+id/tv_telephone_error_return"
+                app:layout_constraintTop_toBottomOf="@+id/tv_telephone_error_return" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName11"
+                android:id="@+id/tv_order_id"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -227,48 +243,65 @@
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:maxLength="32"
                 android:padding="@dimen/_5sdp"
+                android:singleLine="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/textView58"
                 app:layout_constraintTop_toBottomOf="@+id/textView58" />
 
             <TextView
-                android:id="@+id/textView59"
+                android:id="@+id/tv_order_id_error"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName11"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+                app:layout_constraintStart_toStartOf="@+id/tv_order_id"
+                app:layout_constraintTop_toBottomOf="@+id/tv_order_id" />
 
             <TextView
                 android:id="@+id/textView60"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@string/orderdate"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView59"
-                app:layout_constraintTop_toBottomOf="@+id/textView59" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName12"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:background="@drawable/edit_text_background"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="@dimen/_5sdp"
+                android:text="@string/orderdate"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_order_id_error"
+                app:layout_constraintTop_toBottomOf="@+id/tv_order_id_error" />
+
+            <TextView
+                android:id="@+id/tv_order_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:ems="10"
+                android:text="hh"
+                android:inputType="textPersonName"
+                android:maxLength="32"
+                android:padding="@dimen/_5sdp"
+                android:singleLine="true"
+                app:layout_constraintEnd_toStartOf="@+id/iv_date_picker"
                 app:layout_constraintStart_toStartOf="@+id/textView60"
                 app:layout_constraintTop_toBottomOf="@+id/textView60" />
+
+            <ImageView
+                android:id="@+id/iv_date_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_recycler_background"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/ic_baseline_date_range_24"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_order_date"
+                app:layout_constraintEnd_toEndOf="@+id/textView60"
+                app:layout_constraintTop_toTopOf="@+id/tv_order_date" />
 
             <View
                 android:id="@+id/view5"
@@ -276,19 +309,21 @@
                 android:layout_height="@dimen/_1sdp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:background="@color/filterbackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/textView61"
+                app:layout_constraintStart_toStartOf="@+id/tv_date_error"
                 app:layout_constraintTop_toBottomOf="@+id/textView62" />
 
             <TextView
-                android:id="@+id/textView61"
+                android:id="@+id/tv_date_error"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName12"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/tv_order_date"
+                app:layout_constraintTop_toBottomOf="@+id/tv_order_date" />
 
             <TextView
                 android:id="@+id/textView62"
@@ -297,8 +332,8 @@
                 android:layout_marginTop="8dp"
                 android:text="@string/productinformation"
                 android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/textView61"
-                app:layout_constraintTop_toBottomOf="@+id/textView61" />
+                app:layout_constraintStart_toStartOf="@+id/tv_date_error"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date_error" />
 
             <TextView
                 android:id="@+id/textView63"
@@ -318,17 +353,21 @@
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:maxLength="32"
                 android:padding="@dimen/_5sdp"
+                android:singleLine="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textView63"
                 app:layout_constraintTop_toBottomOf="@+id/textView63" />
 
             <TextView
-                android:id="@+id/textView64"
+                android:id="@+id/et_product_name_error"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@id/et_product_name"
@@ -342,11 +381,11 @@
                 android:text="@string/productcode"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@id/textView64"
-                app:layout_constraintTop_toBottomOf="@id/textView64" />
+                app:layout_constraintStart_toStartOf="@id/et_product_name_error"
+                app:layout_constraintTop_toBottomOf="@id/et_product_name_error" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName14"
+                android:id="@+id/et_product_code"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -354,22 +393,26 @@
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:maxLength="32"
                 android:padding="@dimen/_5sdp"
+                android:singleLine="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@id/textView65"
                 app:layout_constraintTop_toBottomOf="@id/textView65" />
 
             <TextView
-                android:id="@+id/textView66"
+                android:id="@+id/tv_product_code_error"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@id/editTextTextPersonName14"
-                app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName14" />
+                app:layout_constraintStart_toStartOf="@id/et_product_code"
+                app:layout_constraintTop_toBottomOf="@id/et_product_code" />
 
             <TextView
                 android:id="@+id/textView67"
@@ -379,34 +422,38 @@
                 android:text="@string/quantity"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@id/textView66"
-                app:layout_constraintTop_toBottomOf="@id/textView66" />
+                app:layout_constraintStart_toStartOf="@id/tv_product_code_error"
+                app:layout_constraintTop_toBottomOf="@id/tv_product_code_error" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName15"
+                android:id="@+id/et_quantity"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
-                android:inputType="textPersonName"
+                android:inputType="number"
+                android:maxLength="32"
                 android:padding="@dimen/_5sdp"
+                android:singleLine="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@id/textView67"
                 app:layout_constraintTop_toBottomOf="@id/textView67" />
 
             <TextView
-                android:id="@+id/textView68"
+                android:id="@+id/tv_quantity_error"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:textColor="@color/pink"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@id/editTextTextPersonName15"
-                app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName15" />
+                app:layout_constraintStart_toStartOf="@id/et_quantity"
+                app:layout_constraintTop_toBottomOf="@id/et_quantity" />
 
             <TextView
                 android:id="@+id/textView69"
@@ -416,35 +463,46 @@
                 android:text="@string/resion"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@id/textView68"
-                app:layout_constraintTop_toBottomOf="@id/textView68" />
+                app:layout_constraintStart_toStartOf="@id/tv_quantity_error"
+                app:layout_constraintTop_toBottomOf="@id/tv_quantity_error" />
 
             <RadioGroup
-                android:id="@+id/editTextTextPersonName16"
+                android:id="@+id/rg_reason_return"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:checkedButton="@id/rb_recive_wrog_order"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@id/textView69"
                 app:layout_constraintTop_toBottomOf="@id/textView69">
 
                 <RadioButton
+                    android:id="@+id/rb_dead_on_arrival"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/deadonarival" />
 
                 <RadioButton
+                    android:id="@+id/rb_faculity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/faculity" />
 
                 <RadioButton
+                    android:id="@+id/rb_other_please_supply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/supplaydetail" />
+
+                <RadioButton
+                    android:id="@+id/rb_order_error"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ordererror" />
 
                 <RadioButton
+                    android:id="@+id/rb_recive_wrog_order"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/recivedwrongitem" />
@@ -456,10 +514,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@id/editTextTextPersonName16"
-                app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName16" />
+                app:layout_constraintStart_toStartOf="@id/rg_reason_return"
+                app:layout_constraintTop_toBottomOf="@id/rg_reason_return" />
 
             <TextView
                 android:id="@+id/textView71"
@@ -473,10 +532,11 @@
                 app:layout_constraintTop_toBottomOf="@id/textView70" />
 
             <RadioGroup
-                android:id="@+id/editTextTextPersonName17"
+                android:id="@+id/rb_product_oping_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:checkedButton="@id/rb_no"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -484,11 +544,13 @@
                 app:layout_constraintTop_toBottomOf="@id/textView71">
 
                 <RadioButton
+                    android:id="@+id/rb_yes"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/yes" />
 
                 <RadioButton
+                    android:id="@+id/rb_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/No" />
@@ -500,10 +562,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="TextView"
+                android:visibility="gone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@id/editTextTextPersonName17"
-                app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName17" />
+                app:layout_constraintStart_toStartOf="@id/rb_product_oping_status"
+                app:layout_constraintTop_toBottomOf="@id/rb_product_oping_status" />
 
             <TextView
                 android:id="@+id/textView73"
@@ -525,6 +588,10 @@
                 android:background="@drawable/edit_text_background"
                 android:ems="10"
                 android:inputType="textMultiLine"
+                android:lines="8"
+                android:gravity="top|left"
+                android:maxLines="8"
+                android:minLines="6"
                 android:padding="@dimen/_5sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -536,6 +603,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:backgroundTint="@color/teal_200"
                 android:text="@string/btnsubmit"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/editTextTextMultiLine"
