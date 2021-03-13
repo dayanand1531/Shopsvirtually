@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.TextView
 import com.example.shopsvirtully.Dialog.ValidationFrom
 import com.example.shopsvirtully.R
+import com.example.shopsvirtully.SessionManagment
 import com.example.shopsvirtully.databinding.FragmentLoginBinding
 
 
@@ -21,11 +22,7 @@ class Login : Fragment(),View.OnClickListener {
     lateinit var emailerror:TextView
    var fragment:Fragment?=null
     var validationFrom=ValidationFrom()
-    var myPreferenceKey="loginkey"
-    var emailpreferance:String="email"
-    lateinit var password:String
-    lateinit var sharedPreferences: SharedPreferences
-
+   lateinit var sessionmangement:SessionManagment
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,12 +31,14 @@ class Login : Fragment(),View.OnClickListener {
       _binding= FragmentLoginBinding.inflate(inflater,container,false)
         var view =binding.root
 
-        sharedPreferences= this.activity?.getSharedPreferences(myPreferenceKey,Context.MODE_PRIVATE)!!
+        sessionmangement= SessionManagment(activity)
+
+      /*  sharedPreferences= this.activity?.getSharedPreferences(myPreferenceKey,Context.MODE_PRIVATE)!!
         emailpreferance= sharedPreferences.getString(emailpreferance,null).toString()
-        password= sharedPreferences.getString("password",null).toString()
+        password= sharedPreferences.getString("password",null).toString()*/
         email=view.findViewById<EditText>(R.id.et_email_login)
         emailerror=view.findViewById<TextView>(R.id.tv_error_login)
-      /*  if(isLogin()){
+       /* if(isLogin()){
            fragment=Home()
             fragmentManager?.beginTransaction()?.replace(R.id.flcontext,Home())?.commit()
         }*/
@@ -53,24 +52,27 @@ class Login : Fragment(),View.OnClickListener {
         return view
     }
 
-    fun isLogin():Boolean {
+   /* fun isLogin():Boolean {
 
         sharedPreferences= this.activity?.getSharedPreferences(myPreferenceKey, Context.MODE_PRIVATE)!!
         return sharedPreferences?.getString(emailpreferance,null)!=null
-    }
+    }*/
 
     override fun onClick(v: View?) {
         when(v){
             binding.btnLogin ->{
                 if (!(validationFrom.validationEmail(binding.etEmailLogin,binding.tvErrorLogin))&&
                     !(validationFrom.validationPassword(binding.etPassword,binding.tvErrorPassword))){
-                   val   editor:SharedPreferences.Editor= sharedPreferences.edit()
+                   /*val   editor:SharedPreferences.Editor= sharedPreferences.edit()
                     editor.putString(emailpreferance,binding.etEmailLogin.text.toString() )
                     editor.putString("password",binding.etPassword.text.toString())
-                    editor.commit()
+                    editor.commit()*/
+
                     return
                 }
+                sessionmangement.createLoginSession(binding.etEmailLogin.text.toString())
                 fragment=Home()
+
 
             }
 

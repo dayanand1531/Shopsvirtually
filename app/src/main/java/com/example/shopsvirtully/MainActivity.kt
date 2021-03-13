@@ -4,8 +4,10 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.net.Uri
+import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -17,9 +19,12 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import com.example.shopsvirtully.Cart.MyCartData
 import com.example.shopsvirtully.Fragment.*
 import com.example.shopsvirtully.Fragment.Login
 import com.example.shopsvirtully.Fragment.Sign_Up
+import com.example.shopsvirtully.RoomDatabase.MyCartDatabase
+import com.example.shopsvirtully.RoomDatabase.Mycart
 import com.example.shopsvirtully.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 
@@ -42,18 +47,42 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var term_Condition:TextView
     lateinit var brand:TextView
      lateinit var special:TextView
-     lateinit var sharedPreferences:SharedPreferences
+
+  /*   lateinit var sharedPreferences:SharedPreferences
     var myPreferenceKey="loginkey"
-    var emailpreferance:String="email"
+    var emailpreferance:String="email"*/
+    lateinit var sessionManagment: SessionManagment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding!!.root)
 
+        InsertMycart(Mycart(0,1,"hhj",5,4),applicationContext)
+      /* MyCartDatabase.getdatabase(applicationContext).getMycartdao().readCart().forEach{
+          Log.d("CartData","name : ${it.product_name}")
+           Log.d("CartData","quantity : ${it.product_quantity}")
+           Log.d("CartData","Image : ${it.product_img}")
+           Log.d("CartData","Price : ${it.product_price}")
+
+      }*/
+
+        sessionManagment= SessionManagment(this)
+
+      if (sessionManagment.isLoggedIn()){
+          fragment=Home()
+          supportFragmentManager.beginTransaction().replace(R.id.flcontext,fragment!!).commit()
+      }
+        else
+      {
+          fragment=Home()
+          supportFragmentManager.beginTransaction().replace(R.id.flcontext,fragment!!).commit()
+      }
+
         tootbar=findViewById(R.id.tootbar)
         drawerLayout=findViewById(R.id.drawer)
         navigationbar=findViewById(R.id.navigationview)
+
        contact=findViewById(R.id.tv_contact_us)
         returns=findViewById(R.id.tv_returns)
         sitemap=findViewById(R.id.tv_sitemap)
@@ -66,14 +95,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         term_Condition=findViewById(R.id.tv_termandconditio)
         brand=findViewById(R.id.tv_brands)
         special=findViewById(R.id.tv_special)
-        toggle= ActionBarDrawerToggle(this,drawerLayout,
+        setSupportActionBar(tootbar)
+        toggle= ActionBarDrawerToggle(this,drawerLayout,tootbar,
             R.string.open,
             R.string.close)
       drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
-        toggle.isDrawerIndicatorEnabled=true
-        setSupportActionBar(tootbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        //toggle.isDrawerIndicatorEnabled=true
+
+        //supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         supportFragmentManager.beginTransaction().replace(R.id.flcontext,Home()).commit()
         navigationbar.setNavigationItemSelectedListener(object:NavigationView.OnNavigationItemSelectedListener{
@@ -231,12 +262,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     fun loginMenu(){
         var popupMenu=PopupMenu(this, binding?.ivLogin)
 
-        if (isLogin()){
+       if (sessionManagment.isLoggedIn().equals(true)){
 
             popupMenu.menuInflater.inflate(R.menu.after_login,popupMenu.menu)
             popupMenu.setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener { item ->
                 when(item.itemId){
                     R.id.menu_hi -> {
+                        item.title="dayanand"
                         Toast.makeText(this,"Hi",Toast.LENGTH_LONG).show()
 
                     }
@@ -254,7 +286,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                       fragment=Account()
                     }
                     R.id.menu_logout -> {
-                    Toast.makeText(this,"Logout sucessfully",Toast.LENGTH_LONG).show()
+                   sessionManagment.logoutUser()
+                        fragment=Home()
                     }
 
                 }
@@ -266,7 +299,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             popupMenu.show()
 
         }
-        else{
+        else if (sessionManagment.isLoggedIn().equals(false)){
             popupMenu.menuInflater.inflate(R.menu.before_login,popupMenu.menu)
             popupMenu.setOnMenuItemClickListener(PopupMenu.OnMenuItemClickListener { item ->
 
@@ -289,15 +322,35 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             })
             popupMenu.show()
 
-        }
+       }
 
 
 
     }
 
-    fun isLogin():Boolean {
-        sharedPreferences=getSharedPreferences(myPreferenceKey, Context.MODE_PRIVATE)
-        return sharedPreferences.getString(emailpreferance,null)!=null
+
+    override fun onBackPressed() {
+        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
+            drawerLayout.isDrawerOpen(GravityCompat.START)
+        }else{
+            super.onBackPressed()
+        }
+
+    }
+
+    class InsertMycart(val mycart:Mycart,val context: Context):AsyncTask<Void,Void,Void>(){
+        override fun doInBackground(vararg params: Void?): Void? {
+            MyCartDatabase.getdatabase(context).getMycartdao().addProduct(mycart)
+            MyCartDatabase.getdatabase(context).getMycartdao().readCart().forEach {
+                Log.d("Data","Mycart: ${it.product_price}\n${it.product_img}\n${it.product_quantity}" +
+                        "\n" +
+                        "${it.product_name}")
+            }
+
+            return null
+        }
+
+
     }
 
 
